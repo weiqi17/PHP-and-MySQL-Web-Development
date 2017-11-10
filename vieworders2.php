@@ -3,13 +3,13 @@
 
     $orders = file("$DOCUMENT_ROOT/../orders/orders.txt");
 
-    $numbers_of_orders = count($orders);
-    if ($numbers_of_orders == 0){
+    $number_of_orders = count($orders);
+    if ($number_of_orders == 0){
         echo "<p><strong>No orders pending.
                 Please try again later.</strong></p>";
     }
 
-    for ($i = 0; $i < $numbers_of_orders; $i++){
+    for ($i = 0; $i < $number_of_orders; $i++){
         echo $orders[$i]."<br />";
     }
 ?>
